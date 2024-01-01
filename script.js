@@ -119,3 +119,18 @@ scrollBottom.forEach((el)=>observer.observe(el));
 
 const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el)=>observer.observe(el));
+
+
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    document.body.classList.toggle("yellow-theme");
+
+    // if(document.body.classList.contains("red-theme")){
+    //     icon.src.getElementById = "#icon1"
+    // }
+
+    // else{
+    //     icon.src.getElementById = "#icon2"
+    // }
+}
