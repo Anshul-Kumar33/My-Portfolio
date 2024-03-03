@@ -8,8 +8,6 @@
 }
 
 :root{
-    /* --hover-color:yellow;
-    --bg-color:rgb(141, 141, 141); */
     --text-color:#f5f5f5;
     --hover-color:#12f7ff;
     --bg-color:#250821;
@@ -73,10 +71,10 @@ body{
     background-color: var(--bg-color);
     color: var(--text-color);
 }
-/* 
-#icon2 {
-    display: none;
-} */
+
+#main {
+    overflow: hidden;
+}
 
 header{
     position: fixed;
@@ -962,6 +960,16 @@ footer a i{
     footer p{
         font-size: .8rem;
     }
+    .about {
+        background-color: var(--second-bg-color);
+        width: 62.5rem;
+    }
+    .about-content p {
+        color: #fdfdfd;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+        width: 70%;
+    }
 }
 
 @media(max-width:768px) {
@@ -1006,16 +1014,22 @@ footer a i{
         display: none;
     }
 
-    .about{
-        flex-direction: column-reverse;
-    }
-
     .skill-main{
         grid-template-columns: 1fr;
     }
 
     .filter-buttons{
         margin: 2.5rem 0;
+    }
+
+    .about {
+        gap: 25px;
+    }
+    .about-content p {
+        color: #fdfdfd;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+        width: 50%;
     }
 }
 
@@ -1038,6 +1052,15 @@ footer a i{
         0 0 80px rgba(255, 18, 18, 0.3),
         0 0 100px rgba(255, 18, 18, 0.3),
         0 0 150px rgba(255, 18, 18, 0.3);
+    }
+
+    .home-content p {
+        color: #bdbdbd;
+        line-height: 1.6;
+        width: 90%;
+    }
+    .info-box {
+        width: 90%;
     }
     
     footer p{
@@ -1063,5 +1086,87 @@ footer a i{
     .social-icons a{
         box-shadow: 0 0 0.3rem red;
     }
+    .about {
+        flex-direction: column;
+    }
+    .about-content p {
+        width: 30%;
+    }
+    .about img {
+        display: none;
+    }
+
+
+    
+}
+
+@media(max-width:300px) {
+    html{
+        font-size: 80%;
+    }
+
+    :root{
+        --hover-color: rgb(255,204,0);
+        --bg-color: black;
+        --text-color:#f5f5f5;
+        --second-bg-color:#292e33;
+        --neon-box-shadow:0 0 .5rem red;
+        --font-neon-text-shadow:0 0 10px rgba(255, 18, 18, 0.3),
+        0 0 20px rgba(255, 18, 18, 0.3),
+        0 0 30px rgba(255, 18, 18, 0.3),
+        0 0 40px rgba(255, 18, 18, 0.3),
+        0 0 70px rgba(255, 18, 18, 0.3),
+        0 0 80px rgba(255, 18, 18, 0.3),
+        0 0 100px rgba(255, 18, 18, 0.3),
+        0 0 150px rgba(255, 18, 18, 0.3);
+    }
+
+    .home-content {
+        width: 70%;
+    }
+
+    .home-content p {
+        color: #bdbdbd;
+        line-height: 1.6;
+        width: 100%;
+    }
+    .info-box {
+        width: 90%;
+    }
+    
+    footer p{
+        font-size: .6rem;
+    }
+
+    .filter-buttons .button{
+        font-size: .8rem;
+    }
+
+    .img-about img{
+        width: 300px;
+    }
+
+    .info-about1,.info-about2,.info-about3{
+        display: none;
+    }
+
+    .img-about p{
+        font-size: 1rem;
+    }
+
+    .social-icons a{
+        box-shadow: 0 0 0.3rem red;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about-content p {
+        width: 25%;
+    }
+    .about img {
+        display: none;
+    }
+
+    
     
 }
